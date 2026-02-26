@@ -21,6 +21,11 @@ logs/
 .DS_Store
 Thumbs.db
 
+# Generated preprocessed dataset (grayscale + resized)
+dataset_wlx_gray64/
+dataset_wlx_grey64/
+dataset/**/*.png
+
 # Ignore dataset
 dataset/alexdjulin/
 dataset/drgfreeman/
