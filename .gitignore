@@ -1,32 +1,37 @@
-# Ignore node_modules directory
-node_modules/
-
-# Ignore build output
-build/
-
-# Ignore IDE and editor files
+# OS / Editor
+.DS_Store
+Thumbs.db
 .vscode/
 .idea/
 *.sublime-project
 *.sublime-workspace
 
-# Ignore virtual environments
+# Python env / cache
 .venv/
+.venv_*/
+.venv_tflite/
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
 
-# Ignore logs and other generated files
+# Logs / temp
 logs/
 *.log
+*.psd
 
-# Ignore OS generated files
-.DS_Store
-Thumbs.db
+# Node (if used)
+node_modules/
+build/
 
-# Generated preprocessed dataset (grayscale + resized)
+# Project-generated data / artifacts
+captured/
 dataset_wlx_gray64/
 dataset_wlx_grey64/
 dataset/**/*.png
+settings.txt
 
-# Ignore dataset
+# Dataset folders
 dataset/alexdjulin/
 dataset/drgfreeman/
 dataset/sanikamal/
@@ -34,45 +39,9 @@ dataset/test/
 dataset/train/
 dataset/validation/
 
-# Ignore models
+# Model artifacts
 models/versions/
 *.h5
 
-# Ignore temporary folders and files
-captured/
-settings.txt
-*.psd
-
-# Ignore demo folder
-demo/
-# Python virtual env
-.venv/
-venv/
-.venv_*/
-.venv_tflite/
-
-# Python cache
-__pycache__/
-*.pyc
-
-# Jupyter
-.ipynb_checkpoints/
-
-# macOS
-.DS_Store
-
-# Python virtual env
-.venv/
-venv/
-.venv_*/
-.venv_tflite/
-
-# Python cache
-__pycache__/
-*.pyc
-
-# Jupyter
-.ipynb_checkpoints/
-
-# macOS
-.DS_Store
+# Local archives
+matlab.zip
